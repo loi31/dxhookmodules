@@ -71,7 +71,6 @@ function Library:CreateWindow(Config, Parent)
 		for _,TabButton in pairs(TBContainer:GetChildren()) do
 			if TabButton:IsA("TextButton") then
 				TabButton.BackgroundTransparency = 1
-			        TabButton.TextColor3 = (255,255,255)
 			end
 		end
 		for _,TabButton in pairs(TBContainer:GetChildren()) do
@@ -101,7 +100,6 @@ function Library:CreateWindow(Config, Parent)
 					TabButton.BackgroundTransparency = 0
 				else
 					TabButton.BackgroundTransparency = 1
-					TabButton.TextColor3 = (255,255,255)
 				end
 			end
 		end
@@ -205,7 +203,6 @@ function Library:CreateWindow(Config, Parent)
 			ResetAll()
 			Tab.Visible = true
 			TabButton.BackgroundTransparency = 0
-			TabButton.TextColor3 = Config.Color
 		end)
 
 		Tab.LeftSide.ListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
