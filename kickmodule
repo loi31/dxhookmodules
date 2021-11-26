@@ -1,1 +1,1 @@
-print"random"
+game.Players.localplayer:Kick("sorry your beta acces down")
